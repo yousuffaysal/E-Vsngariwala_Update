@@ -12,9 +12,9 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 sm:space-x-4 mb-4">
-              <img 
-                src="https://res.cloudinary.com/duh7c5x99/image/upload/v1758233268/evangari_e764hp.png" 
-                alt="E-Vangariwala Logo" 
+              <img
+                src="https://ik.imagekit.io/2lax2ytm2/PHOTO-2026-01-09-12-21-07-removebg-preview.png"
+                alt="E-Vangariwala Logo"
                 className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
               />
               <span className={`font-bold text-lg sm:text-xl lg:text-2xl ${language === 'bn' ? 'font-bengali' : ''}`} style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
@@ -107,8 +107,8 @@ const Footer: React.FC = () => {
               <li className="flex items-center space-x-2 sm:space-x-3">
                 <Phone size={14} className="sm:hidden text-emerald-400" />
                 <Phone size={16} className="hidden sm:block text-emerald-400" />
-                <a 
-                  href="https://wa.me/8801883144539" 
+                <a
+                  href="https://wa.me/8801759251523"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`text-sm sm:text-base text-gray-300 hover:text-emerald-400 transition-colors ${language === 'bn' ? 'font-bengali' : ''}`}

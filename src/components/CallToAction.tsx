@@ -44,17 +44,17 @@ const CallToAction: React.FC = () => {
 
         {/* Call to Action Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a 
-            href="https://wa.me/8801883144539" 
+          <a
+            href="https://wa.me/8801759251523"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-black text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-800 transition-all duration-300 flex items-center gap-2"
           >
             {t('cta.getInTouch')}
           </a>
-          
-          <a 
-            href="https://wa.me/8801883144539" 
+
+          <a
+            href="https://wa.me/8801759251523"
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center hover:bg-gray-800 transition-all duration-300"

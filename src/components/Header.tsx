@@ -12,9 +12,9 @@ const Header: React.FC = () => {
       <div className="w-full px-4 sm:px-6 py-4 sm:py-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-2 sm:space-x-4">
-            <img 
-              src="https://res.cloudinary.com/duh7c5x99/image/upload/v1758233268/evangari_e764hp.png" 
-              alt="E-Vangariwala Logo" 
+            <img
+              src="https://ik.imagekit.io/2lax2ytm2/PHOTO-2026-01-09-12-21-07-removebg-preview.png"
+              alt="E-Vangariwala Logo"
               className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain"
             />
             <span className={`text-white font-bold text-lg sm:text-xl md:text-2xl ${language === 'bn' ? 'font-bengali' : ''}`} style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
@@ -30,7 +30,7 @@ const Header: React.FC = () => {
             <a href="#pricing" className={`text-white hover:text-gray-300 transition-colors font-medium text-sm xl:text-base ${language === 'bn' ? 'font-bengali' : ''}`}>
               {t('nav.pricing')}
             </a>
-            
+
             {/* Company Dropdown */}
             <div className="relative">
               <button
@@ -40,7 +40,7 @@ const Header: React.FC = () => {
                 <span>{t('nav.about')}</span>
                 <ChevronDown size={14} className={`transition-transform ${isCompanyOpen ? 'rotate-180' : ''}`} />
               </button>
-              
+
               {isCompanyOpen && (
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2">
                   <a href="#about" className={`block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-emerald-600 transition-colors text-sm ${language === 'bn' ? 'font-bengali' : ''}`}>
@@ -55,7 +55,7 @@ const Header: React.FC = () => {
                 </div>
               )}
             </div>
-            
+
             <a href="#contact" className={`text-white hover:text-gray-300 transition-colors font-medium text-sm xl:text-base ${language === 'bn' ? 'font-bengali' : ''}`}>
               {t('nav.contact')}
             </a>
@@ -71,9 +71,9 @@ const Header: React.FC = () => {
               <Globe size={18} className="hidden sm:block" />
               <span className="text-xs sm:text-sm font-medium">{language === 'en' ? 'বাং' : 'EN'}</span>
             </button>
-            
-            <a 
-              href="https://wa.me/8801883144539" 
+
+            <a
+              href="https://wa.me/8801759251523"
               target="_blank"
               rel="noopener noreferrer"
               className={`hidden sm:inline-flex bg-black text-white px-3 sm:px-4 md:px-6 py-2 sm:py-3 rounded-full hover:bg-white hover:text-black transition-all duration-300 font-medium flex items-center gap-1 sm:gap-2 text-xs sm:text-sm ${language === 'bn' ? 'font-bengali' : ''}`}
@@ -111,8 +111,8 @@ const Header: React.FC = () => {
               <a href="#contact" className={`text-white hover:text-gray-300 transition-colors font-medium text-sm sm:text-base py-2 ${language === 'bn' ? 'font-bengali' : ''}`}>
                 {t('nav.contact')}
               </a>
-              <a 
-                href="https://wa.me/8801883144539" 
+              <a
+                href="https://wa.me/8801759251523"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`bg-white text-black px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-gray-200 transition-colors font-medium text-center text-sm sm:text-base ${language === 'bn' ? 'font-bengali' : ''}`}

@@ -201,8 +201,10 @@ const Testimonials: React.FC = () => {
                 {/* Star Rating */}
                 <div className="flex items-center justify-center lg:justify-start gap-1 mb-4 sm:mb-6">
                   {[...Array(current.rating)].map((_, i) => (
-                    <Star key={i} size={16} className="sm:hidden text-gray-900 fill-current" />
-                    <Star key={i} size={20} className="hidden sm:block text-gray-900 fill-current" />
+                    <React.Fragment key={i}>
+                      <Star size={16} className="sm:hidden text-gray-900 fill-current" />
+                      <Star size={20} className="hidden sm:block text-gray-900 fill-current" />
+                    </React.Fragment>
                   ))}
                 </div>
 

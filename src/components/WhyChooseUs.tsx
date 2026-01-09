@@ -73,23 +73,21 @@ const WhyChooseUs: React.FC = () => {
   ];
 
   return (
-    <section 
+    <section
       ref={sectionRef}
-      className={`py-20 bg-white transition-all duration-1200 ease-out ${
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'
-      }`}
+      className={`py-20 bg-white transition-all duration-1200 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'
+        }`}
       style={{
         transitionTimingFunction: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
       }}
     >
       <div className="container mx-auto px-4 sm:px-6">
         {/* Section Header */}
-        <div className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ease-out ${
-          isVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-95'
-        }`} style={{
-          transitionDelay: isVisible ? '300ms' : '0ms',
-          transitionTimingFunction: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
-        }}>
+        <div className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-95'
+          }`} style={{
+            transitionDelay: isVisible ? '300ms' : '0ms',
+            transitionTimingFunction: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+          }}>
           <h2 className={`text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 ${language === 'bn' ? 'font-bengali' : ''}`} style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             {t('whyChooseUs.title')}
           </h2>
@@ -103,15 +101,14 @@ const WhyChooseUs: React.FC = () => {
           {features.map((feature, index) => {
             const IconComponent = feature.icon;
             const isEven = index % 2 === 0; // Even index = image top, Odd index = image bottom
-            
+
             return (
-              <article 
+              <article
                 key={index}
-                className={`group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 ${
-                  isVisible 
-                    ? 'opacity-100 translate-y-0 scale-100' 
+                className={`group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 ${isVisible
+                    ? 'opacity-100 translate-y-0 scale-100'
                     : 'opacity-0 translate-y-16 scale-95'
-                }`}
+                  }`}
                 style={{
                   transitionDelay: isVisible ? `${500 + (index * 200)}ms` : '0ms',
                   transitionTimingFunction: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
@@ -122,8 +119,8 @@ const WhyChooseUs: React.FC = () => {
                   <>
                     {/* Image */}
                     <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden rounded-t-2xl border-2 m-3 sm:m-4" style={{ borderColor: '#e1fcae' }}>
-                      <img 
-                        src={feature.image} 
+                      <img
+                        src={feature.image}
                         alt={feature.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
@@ -180,8 +177,8 @@ const WhyChooseUs: React.FC = () => {
 
                     {/* Image */}
                     <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden rounded-b-2xl border-2 m-3 sm:m-4" style={{ borderColor: '#e1fcae' }}>
-                      <img 
-                        src={feature.image} 
+                      <img
+                        src={feature.image}
                         alt={feature.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
@@ -194,19 +191,18 @@ const WhyChooseUs: React.FC = () => {
         </div>
 
         {/* Call to Action */}
-        <div className={`text-center transition-all duration-800 ease-out ${
-          isVisible 
-            ? 'opacity-100 translate-y-0 scale-100' 
+        <div className={`text-center transition-all duration-800 ease-out ${isVisible
+            ? 'opacity-100 translate-y-0 scale-100'
             : 'opacity-0 translate-y-8 scale-95'
-        }`} style={{
-          transitionDelay: isVisible ? '1200ms' : '0ms',
-          transitionTimingFunction: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
-        }}>
-          <a 
-            href="https://wa.me/8801883144539" 
+          }`} style={{
+            transitionDelay: isVisible ? '1200ms' : '0ms',
+            transitionTimingFunction: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+          }}>
+          <a
+            href="https://wa.me/8801759251523"
             target="_blank"
             rel="noopener noreferrer"
-            className={`bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold hover:from-emerald-600 hover:to-teal-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2 mx-auto ${language === 'bn' ? 'font-bengali' : ''}`} 
+            className={`bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold hover:from-emerald-600 hover:to-teal-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2 mx-auto ${language === 'bn' ? 'font-bengali' : ''}`}
             style={{ fontFamily: 'Space Grotesk, sans-serif' }}
           >
             {t('whyChooseUs.cta')}
