@@ -73,14 +73,14 @@ const Header: React.FC = () => {
             </button>
 
             <a
-              href="https://wa.me/8801759251523"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfyj1SX03JhxIVkXJ5D-IitcYoDkDTM46stZYtD0URkrI1-vA/viewform?embedded=true"
               target="_blank"
               rel="noopener noreferrer"
               className={`hidden sm:inline-flex bg-black text-white px-3 sm:px-4 md:px-6 py-2 sm:py-3 rounded-full hover:bg-white hover:text-black transition-all duration-300 font-medium flex items-center gap-1 sm:gap-2 text-xs sm:text-sm ${language === 'bn' ? 'font-bengali' : ''}`}
               style={{ fontFamily: 'Space Grotesk, sans-serif' }}
             >
-              <span className="hidden sm:inline">Pick-Up Call</span>
-              <span className="sm:hidden">Call</span>
+              <span className="hidden sm:inline">{language === 'bn' ? 'পিকআপ বুক করুন' : 'Book Pickup'}</span>
+              <span className="sm:hidden">{language === 'bn' ? 'বুক' : 'Book'}</span>
               <span className="text-sm sm:text-lg">→</span>
             </a>
 
@@ -112,13 +112,13 @@ const Header: React.FC = () => {
                 {t('nav.contact')}
               </a>
               <a
-                href="https://wa.me/8801759251523"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfyj1SX03JhxIVkXJ5D-IitcYoDkDTM46stZYtD0URkrI1-vA/viewform?embedded=true"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`bg-white text-black px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-gray-200 transition-colors font-medium text-center text-sm sm:text-base ${language === 'bn' ? 'font-bengali' : ''}`}
                 style={{ fontFamily: 'Space Grotesk, sans-serif' }}
               >
-                Pick-Up Call
+                {language === 'bn' ? 'পিকআপ বুক করুন' : 'Book Pickup'}
               </a>
             </nav>
           </div>

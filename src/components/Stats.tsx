@@ -130,8 +130,8 @@ const Stats: React.FC = () => {
             <div
               key={index}
               className={`text-center group transition-all duration-700 ease-out ${isVisible
-                  ? 'opacity-100 translate-y-0 scale-100 rotate-0'
-                  : 'opacity-0 translate-y-16 scale-95 rotate-2'
+                ? 'opacity-100 translate-y-0 scale-100 rotate-0'
+                : 'opacity-0 translate-y-16 scale-95 rotate-2'
                 }`}
               style={{
                 transitionDelay: isVisible ? `${800 + (index * 200)}ms` : '0ms',
@@ -168,7 +168,7 @@ const Stats: React.FC = () => {
             transitionTimingFunction: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
           }}>
           <a
-            href="https://wa.me/8801759251523"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfyj1SX03JhxIVkXJ5D-IitcYoDkDTM46stZYtD0URkrI1-vA/viewform?embedded=true"
             target="_blank"
             rel="noopener noreferrer"
             className={`bg-lime-400 text-emerald-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-lime-300 transition-all duration-500 transform hover:scale-110 hover:shadow-2xl ${language === 'bn' ? 'font-bengali' : ''}`}

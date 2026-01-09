@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, MessageCircle } from 'lucide-react';
+import { Phone, MessageCircle, Calendar } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 const Hero: React.FC = () => {
@@ -28,6 +28,16 @@ const Hero: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8">
             <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfyj1SX03JhxIVkXJ5D-IitcYoDkDTM46stZYtD0URkrI1-vA/viewform?embedded=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex items-center gap-2 bg-emerald-500 text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg hover:bg-emerald-600 transition-all duration-300 text-sm sm:text-base shadow-lg ${language === 'bn' ? 'font-bengali' : ''}`}
+            >
+              <Calendar size={18} className="sm:hidden" />
+              <Calendar size={20} className="hidden sm:block" />
+              {t('hero.cta')}
+            </a>
+            <a
               href="https://wa.me/8801759251523"
               target="_blank"
               rel="noopener noreferrer"
@@ -41,7 +51,7 @@ const Hero: React.FC = () => {
               href="https://wa.me/8801759251523"
               target="_blank"
               rel="noopener noreferrer"
-              className={`flex items-center gap-2 bg-emerald-500 text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg hover:bg-emerald-600 transition-all duration-300 text-sm sm:text-base shadow-lg ${language === 'bn' ? 'font-bengali' : ''}`}
+              className={`flex items-center gap-2 bg-white text-emerald-900 border border-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg hover:bg-emerald-50 transition-all duration-300 text-sm sm:text-base shadow-lg ${language === 'bn' ? 'font-bengali' : ''}`}
             >
               <MessageCircle size={18} className="sm:hidden" />
               <MessageCircle size={20} className="hidden sm:block" />

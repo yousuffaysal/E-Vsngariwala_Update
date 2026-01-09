@@ -99,15 +99,15 @@ const WhyChooseUs: React.FC = () => {
         {/* Article Preview Cards - 2x2 Grid with Alternating Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto mb-12 sm:mb-16">
           {features.map((feature, index) => {
-            const IconComponent = feature.icon;
+
             const isEven = index % 2 === 0; // Even index = image top, Odd index = image bottom
 
             return (
               <article
                 key={index}
                 className={`group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 ${isVisible
-                    ? 'opacity-100 translate-y-0 scale-100'
-                    : 'opacity-0 translate-y-16 scale-95'
+                  ? 'opacity-100 translate-y-0 scale-100'
+                  : 'opacity-0 translate-y-16 scale-95'
                   }`}
                 style={{
                   transitionDelay: isVisible ? `${500 + (index * 200)}ms` : '0ms',
@@ -192,14 +192,14 @@ const WhyChooseUs: React.FC = () => {
 
         {/* Call to Action */}
         <div className={`text-center transition-all duration-800 ease-out ${isVisible
-            ? 'opacity-100 translate-y-0 scale-100'
-            : 'opacity-0 translate-y-8 scale-95'
+          ? 'opacity-100 translate-y-0 scale-100'
+          : 'opacity-0 translate-y-8 scale-95'
           }`} style={{
             transitionDelay: isVisible ? '1200ms' : '0ms',
             transitionTimingFunction: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
           }}>
           <a
-            href="https://wa.me/8801759251523"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfyj1SX03JhxIVkXJ5D-IitcYoDkDTM46stZYtD0URkrI1-vA/viewform?embedded=true"
             target="_blank"
             rel="noopener noreferrer"
             className={`bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold hover:from-emerald-600 hover:to-teal-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2 mx-auto ${language === 'bn' ? 'font-bengali' : ''}`}
